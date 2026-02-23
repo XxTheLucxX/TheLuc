@@ -1,0 +1,118 @@
+:root {
+  color-scheme: light;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f6f7f9;
+  color: #222;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid #dde1e6;
+  background: #fff;
+}
+
+.topbar h1 {
+  font-size: 1rem;
+  margin: 0;
+}
+
+button {
+  border: 1px solid #cfd5dd;
+  background: #fff;
+  padding: 0.45rem 0.75rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  padding: 1rem;
+  min-height: calc(100vh - 64px);
+}
+
+.panel {
+  background: #fff;
+  border: 1px solid #dde1e6;
+  border-radius: 10px;
+  padding: 0.85rem;
+}
+
+h2, h3 {
+  margin: 0 0 0.75rem;
+  font-size: 0.95rem;
+}
+
+.tree-root ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 1rem;
+}
+
+.tree-item {
+  margin: 0.2rem 0;
+}
+
+.tree-row {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.tree-label {
+  cursor: pointer;
+  padding: 0.1rem 0.2rem;
+  border-radius: 4px;
+}
+
+.tree-label.selected {
+  background: #e3efff;
+}
+
+.folder-path {
+  font-size: 0.85rem;
+  color: #4b5563;
+  margin-bottom: 0.65rem;
+}
+
+label {
+  display: block;
+  font-size: 0.82rem;
+  margin: 0.45rem 0 0.25rem;
+}
+
+input, textarea {
+  width: 100%;
+  border: 1px solid #cfd5dd;
+  border-radius: 6px;
+  padding: 0.45rem;
+  font: inherit;
+  box-sizing: border-box;
+}
+
+.save-status {
+  min-height: 1.2rem;
+  font-size: 0.82rem;
+  color: #166534;
+  margin-top: 0.45rem;
+}
+
+.contents {
+  margin: 0;
+  padding-left: 1rem;
+  font-size: 0.88rem;
+}
+
+@media (max-width: 900px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}

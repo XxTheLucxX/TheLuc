@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TheLuc Folder Notes</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <h1>Folder Notes</h1>
+      <button id="pickFolderBtn">Open Root Folder</button>
+    </header>
+
+    <main class="layout">
+      <section class="panel tree-panel">
+        <h2>Folders</h2>
+        <div id="treeRoot" class="tree-root">Pick a root folder to begin.</div>
+      </section>
+
+      <section class="panel details-panel">
+        <h2>Details</h2>
+        <div id="folderPath" class="folder-path">No folder selected.</div>
+
+        <label for="tagsInput">Tags (comma separated)</label>
+        <input id="tagsInput" type="text" placeholder="work, important" />
+
+        <label for="notesInput">Notes</label>
+        <textarea id="notesInput" rows="8" placeholder="Write notes for this folder..."></textarea>
+
+        <button id="saveBtn" disabled>Save Note + Tags</button>
+        <div id="saveStatus" class="save-status"></div>
+
+        <h3>Selected folder contents</h3>
+        <ul id="folderContents" class="contents"></ul>
+      </section>
+    </main>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
